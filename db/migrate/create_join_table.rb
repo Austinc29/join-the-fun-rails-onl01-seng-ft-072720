@@ -1,6 +1,6 @@
 class CreateJoinTable > ActiveRecord::Base 
-  create_join_table :events, :users do |t|
-    t.index :event_id
-    t.index :user_id
+  create_join_table :taxis, :passengers do |t|
+    t.index :taxi_id
+    t.index :passenger_id
   end
 end 
